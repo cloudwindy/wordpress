@@ -4,6 +4,5 @@ RUN set -eux; \
     docker-php-ext-install pdo pdo_mysql; \
     pecl install apcu; \
     pecl install redis; \
-    pecl install memcached; \
-    docker-php-ext-enable apcu redis memcached; \
+    docker-php-ext-enable apcu redis; \
     rm -rf /tmp/*
